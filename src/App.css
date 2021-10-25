@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+div.app-title {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 72px;
+
+  /* 메인색 */
+
+  color: #00afb2;
+
+  height: 72px;
+  width: 228px;
+  left: 846px;
+  top: 282px;
+  border-radius: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+input {
+  position: absolute;
+  width: 621px;
+  height: 60px;
+  left: 580px;
+  top: 388px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical
+   to box height */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* 비활성화색 */
+
+  color: #a5a5a5;
+}
+span.app-number {
+  /* 메인색 */
+  position: absolute;
+  left: 30.19%;
+  right: 52.63%;
+  top: -2.1%;
+  bottom: 22.08%;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height */
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  text-align: center;
 
-.App-link {
-  color: #61dafb;
-}
+  /* 메인색 */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #00afb2;
+}
+span.app-text02 {
+  position: absolute;
+  left: 34.57%;
+  right: 52.53%;
+  top: -2.1%;
+  bottom: 22.08%;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* 비활성화색 */
+
+  color: #a5a5a5;
 }

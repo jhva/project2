@@ -1,0 +1,75 @@
+.LoginButton {
+  position: absolute;
+  width: 98px;
+  height: 35px;
+  left: 1242px;
+  top: 229px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* 흰글씨 */
+
+  color: #ffffff;
+
+  /* 글자색 */
+
+  background: #000000;
+}
+
+.Patent {
+  height: 65px;
+  width: 62px;
+  left: 629px;
+  top: 31px;
+
+  font-family: Noto Sans KR;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  left: 63.27%;
+  right: 11.32%;
+  top: 39.89%;
+  bottom: 90.42%;
+  display: flex;
+  background: #000000;
+
+  /* 흰글씨 */
+
+  color: #ffffff;
+}
+.Precedenc {
+  height: 65px;
+  width: 64px;
+  left: 698px;
+  top: 31px;
+  border-radius: 0px;
+  position: absolute;
+  left: 66.69%;
+  right: 0.39%;
+  top: 39.9%;
+  bottom: 10.42%;
+  
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  /* 흰글씨 */
+  
+  color: #FFFFFF;
+  background: #00afb2;
+}

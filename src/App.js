@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+import './App.css';
+import LoginButton from './components/Button/LoginButton';
+import PatentButton from './components/Button/PatentButton';
+import PrecedencButton from './components/Button/PrecedencButton';
+import InsertSearch from './components/InsertSearch';
+import TextSearch from './components/TextSearch';
+import NumberSearch from './components/NumberSearch';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="app-title">Tanalysis</div>
+      <PatentButton/>
+      <InsertSearch />
+      <LoginButton />
+      <PrecedencButton/>
+      <TextSearch/>
+      <NumberSearch/>
+    </>
   );
-}
+};
+
+
 
 export default App;
