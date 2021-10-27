@@ -22,7 +22,7 @@ div.app-title {
   border-radius: 0px;
 }
 
-input {
+input.app-b {
   position: absolute;
   width: 621px;
   height: 60px;
@@ -38,9 +38,10 @@ input {
    to box height */
 
   /* 비활성화색 */
-
-  color: #a5a5a5;
+  text-indent: 2em;
+  color: balck;
 }
+
 span.app-number {
   /* 메인색 */
   position: absolute;
@@ -61,8 +62,6 @@ span.app-number {
   text-align: center;
 
   /* 메인색 */
-
-  color: #00afb2;
 }
 span.app-text02 {
   position: absolute;
@@ -85,4 +84,27 @@ span.app-text02 {
   /* 비활성화색 */
 
   color: #a5a5a5;
+}
+
+a:visited {
+  color: #a5a5a5;
+}
+a:hover {
+  color: #00afb2;
+  text-decoration: underline;
+}
+
+p {
+  position: absolute;
+  left: 30.31%;
+  right: 50.24%;
+  top: 47.59%;
+  bottom: 60.54%;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
 }

@@ -73,3 +73,24 @@
   color: #FFFFFF;
   background: #00afb2;
 }
+.Input{
+  position: absolute;
+  width: 621px;
+  height: 60px;
+  left: 580px;
+  top: 388px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical
+   to box height */
+
+  /* 비활성화색 */
+
+  color: #a5a5a5;
+}
+
+
