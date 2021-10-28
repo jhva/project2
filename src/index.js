@@ -9,14 +9,17 @@ import LoginButton from './components/Button/LoginButton';
 import TextSearch from './components/TextSearch';
 import PrecedencButton from './components/Button/PrecedencButton'
 
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <PatentButton/>
-      
+      <TextSearch/>
       <LoginButton />
       <PrecedencButton/>
-      <TextSearch/>
+      
+      
       
 
   </React.StrictMode>,
