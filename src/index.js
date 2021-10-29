@@ -6,19 +6,21 @@ import reportWebVitals from './reportWebVitals';
 import '../src/App.css';
 import PatentButton from './components/Button/PatentButton'
 import LoginButton from './components/Button/LoginButton';
-import TextSearch from './components/TextSearch';
+import TextSearch from './components/Searchlist/TextSearch';
 import PrecedencButton from './components/Button/PrecedencButton'
+import SearchBar from './components/Searchlist/SearchBar';
+
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App/>
     <PatentButton/>
       <TextSearch/>
       <LoginButton />
       <PrecedencButton/>
-      
+    
       
       
 

@@ -22,25 +22,6 @@ div.app-title {
   border-radius: 0px;
 }
 
-input.app-b {
-  position: absolute;
-  width: 621px;
-  height: 60px;
-  left: 580px;
-  top: 388px;
-
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 22px;
-  /* identical
-   to box height */
-
-  /* 비활성화색 */
-  text-indent: 2em;
-  color: balck;
-}
 
 span.app-number {
   /* 메인색 */
@@ -108,3 +89,4 @@ p {
   display: flex;
   align-items: center;
 }
+

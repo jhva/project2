@@ -1,12 +1,12 @@
-import { render } from '@testing-library/react';
+
 import React, { Component } from 'react';
-import '../App.css';
-import setting from './setting';
+
+import setting from '../setting';
 
 
 class TextSearch extends Component {
   state = {
-    message: '특허번호 / 공개번호 / 결과번호를 입력하세요',
+    
   };
 
   onClickEnter = () =>
@@ -19,12 +19,6 @@ class TextSearch extends Component {
     
   }
   
-  handleTextOn() {
-    this.setState({ isTextIn: true });
-  }
-  handleTextOff() {
-    this.setState({ isTextIn: false });
-  }
 
   render() {
     const { message } = this.state;
@@ -43,7 +37,8 @@ class TextSearch extends Component {
           </a>
         </span>
 
-        <input className="app-b" placeholder={message} />
+        
+        <p>카테고리별 텍스트 입력</p>
       </div>
     );
   }
