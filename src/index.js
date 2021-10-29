@@ -16,8 +16,10 @@ import SearchBar from './components/Searchlist/SearchBar';
 ReactDOM.render(
   <React.StrictMode>
     <App/>
+    
+    
     <PatentButton/>
-      <TextSearch/>
+      
       <LoginButton />
       <PrecedencButton/>
     

@@ -24,9 +24,12 @@ class App extends Component {
     keyword: '',
     results: [],
   };
-  handleCreate= (data) => {
-    console.log(data)
-  }
+  onClickEnter = () =>
+    this.setState({ message: '특허번호 / 공개번호 / 결과번호를 입력하세요' });
+  onClickLeave = () =>
+    this.setState({ message: '여기에 기술을 설명하는 텍스트를 입력하세요.' });
+
+
   matchName = (name, keyword) => {
     var keyLen = keyword.length;
     name = name.toLowerCase().substring(0, keyLen);
@@ -47,18 +50,17 @@ class App extends Component {
     this.setState({ results });
   };
   render() {
-    let { results, keyword } = this.state;
+   
+    let { results, keyword, } = this.state;
     return (
       <>
-        <div className="app-title">Tanalysis</div>
-
+        
         <SearchBar
+      
           results={results}
           keyword={keyword}
           updateField={this.updateField}
-
         />
-        
       </>
     );
   }
