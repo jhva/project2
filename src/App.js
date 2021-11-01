@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,useState } from 'react';
 
 import LoginButton from './components/Button/LoginButton';
 import PatentButton from './components/Button/PatentButton';
@@ -7,8 +7,9 @@ import CateGory from './components/Category/Category';
 import SearchBar from './components/Searchlist/SearchBar';
 
 import TextSearch from './components/Searchlist/TextSearch';
-class App extends Component {
+class App extends React.Component {
   state = {
+    
     data: [
       {
         name: 'US8046721B2',
@@ -24,11 +25,6 @@ class App extends Component {
     keyword: '',
     results: [],
   };
-  onClickEnter = () =>
-    this.setState({ message: '특허번호 / 공개번호 / 결과번호를 입력하세요' });
-  onClickLeave = () =>
-    this.setState({ message: '여기에 기술을 설명하는 텍스트를 입력하세요.' });
-
 
   matchName = (name, keyword) => {
     var keyLen = keyword.length;
@@ -50,16 +46,27 @@ class App extends Component {
     this.setState({ results });
   };
   render() {
-   
-    let { results, keyword, } = this.state;
-
-
+    let { results, keyword } = this.state;
 
     return (
       <>
-        
+       <div className="container">
+     <div className="app-title">Tanalysis</div>
+        <span className="app-number" >
+          <a href="#" type="btn">
+            번호검색
+          </a>
+        </span>
+        <span className="app-text02" >
+          <a href="#" type="btn">
+            텍스트 검색
+          </a>
+          
+          </span>
+          
+          </div>
         <SearchBar
-      
+          
           results={results}
           keyword={keyword}
           updateField={this.updateField}
