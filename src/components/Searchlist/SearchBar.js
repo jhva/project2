@@ -26,7 +26,7 @@ const SearchBar = ({ results, keyword, updateField}) => {
   });
  
   return (
-    <>
+    <div className="container">
      <div className="app-title">Tanalysis</div>
         <span className="app-number" >
           <a href="#" type="btn">
@@ -49,7 +49,7 @@ const SearchBar = ({ results, keyword, updateField}) => {
       {results.length > 0 ? (
         <div className="search-results">{renderResults}</div>
       ) : null}
-    </>
+    </div>
   );
 };
 

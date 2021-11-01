@@ -1,42 +1,86 @@
+@media (min-width: 360px) and (max-width: 759px) {
+  .app-b {
+    position: absolute;
+    width: 621px;
+    height: 60px;
+    left: 580px;
+    top: 388px;
 
-.app-b{
-
-  position: absolute;
-  width: 621px;
-  height: 60px;
-  left: 580px;
-  top: 388px;
-
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 22px;
-  /* identical
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical
    to box height */
 
-  /* 비활성화색 */
-  text-indent: 2em;
-  color: balck;
+    /* 비활성화색 */
+    text-indent: 2em;
+    color: balck;
+  }
+  .name {
+    position: absolute;
+    width: 295px;
+    height: 22px;
+    left: 615px;
+    top: 636px;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* 비활성화색 */
+
+    color: #a5a5a5;
+  }
 }
-.name{
-  position: absolute;
-width: 295px;
-height: 22px;
-left: 615px;
-top: 636px;
 
-font-family: Noto Sans KR;
-font-style: normal;
-font-weight: bold;
-font-size: 15px;
-line-height: 22px;
-/* identical to box height */
+@media (min-width: 759px) {
+  .app-b {
+    position: absolute;
+    width: 621px;
+    height: 60px;
+    left: 580px;
+    top: 388px;
 
-display: flex;
-align-items: center;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical
+     to box height */
 
-/* 비활성화색 */
+    /* 비활성화색 */
+    text-indent: 2em;
+    color: black;
+  }
+  .name {
+    position: absolute;
+    width: 295px;
+    height: 22px;
+    left: 615px;
+    top: 636px;
 
-color: #A5A5A5;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* 비활성화색 */
+
+    color: #a5a5a5;
+  }
 }
+

@@ -1,7 +1,16 @@
-
+@media (min-width: 360px) and (max-width: 759px) {
   div.app-title {
+    /* 메인색*/
+    color: #00afb2;
+    height: 72px;
     position: absolute;
-    left: 0%;
+
+    width: 228px;
+    top: -1px;
+
+    left: -1px;
+    letter-spacing: 0;
+
     right: 0%;
     top: 0%;
     bottom: 0%;
@@ -16,11 +25,7 @@
 
     color: #00afb2;
 
-    height: 72px;
-    width: 228px;
-    left: 846px;
-    top: 282px;
-    border-radius: 0px;
+    border: 1px solid #000000;
   }
 
   span.app-number {
@@ -89,3 +94,89 @@
     display: flex;
     align-items: center;
   }
+}
+
+@media (min-width: 759px) {
+  div.app-title {
+    /* 메인색*/
+    color: #00afb2;
+    height: 72px;
+    position: absolute;
+
+    width: 728px;
+    font-size: 50px;
+
+    left: 846px;
+    top: 282px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 50px;
+  }
+
+  span.app-number {
+    /* 메인색 */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    /* identical to box height */
+
+    position: absolute;
+
+    /* 메인색 */
+    height: 22px;
+    width: 148px;
+    left: 590px;
+    top: 360px;
+  }
+  span.app-text02 {
+    position: absolute;
+    height: 22px;
+    width: 148px;
+    left: 660px;
+    top: 360px;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 비활성화색 */
+
+    color: #a5a5a5;
+  }
+
+  a:visited {
+    color: #a5a5a5;
+  }
+  a:hover {
+    color: #00afb2;
+    text-decoration: underline;
+  }
+
+  p {
+    position: absolute;
+    left: 30.31%;
+    right: 50.24%;
+    top: 47.59%;
+    bottom: 60.54%;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+}
