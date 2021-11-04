@@ -48,7 +48,7 @@
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 22px;
     display: flex;
     align-items: center;
@@ -101,4 +101,6 @@
 
     color: #a5a5a5;
   }
+
+
 }

@@ -134,6 +134,7 @@
     left: 590px;
     top: 360px;
   }
+  
   span.app-text02 {
     position: absolute;
     height: 22px;
@@ -179,4 +180,19 @@
     display: flex;
     align-items: center;
   }
+  div.category {
+    justify-content: center;
+    width: 145px;
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    letter-spacing: 0;
+    font-weight: bold;
+    height: 23px;
+    width: 145px;
+    left: 582px;
+    top: 469px;
+   
+  }
+
 }

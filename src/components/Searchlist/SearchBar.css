@@ -82,5 +82,20 @@
 
     color: #a5a5a5;
   }
-}
 
+  .category {
+    justify-content: center;
+    width: 145px;
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    letter-spacing: 0;
+    font-weight: bold;
+    height: 23px;
+    width: 145px;
+    left: 582px;
+    top: 469px;
+  }
+ .Text {
+ }
+}

@@ -1,12 +1,10 @@
-
-import { render } from '@testing-library/react';
-import React,{useState} from 'react';
+import { style } from 'dom-helpers';
+import React, { useState } from 'react';
+import reactDom from 'react-dom';
+import Category from '../Category/Category';
 import './SearchBar.css';
 
-
-  
-
-const SearchBar = ({ results, keyword, updateField,}) => {
+const SearchBar = ({ results, keyword, updateField }) => {
   //renders our results using the SearchPreview component
 
   var updateText = (text) => {
@@ -14,7 +12,6 @@ const SearchBar = ({ results, keyword, updateField,}) => {
     updateField('results', []);
   };
 
-  
   var renderResults = results.map(({ title, name }, index) => {
     return (
       <SearchPreview
@@ -26,28 +23,43 @@ const SearchBar = ({ results, keyword, updateField,}) => {
       />
     );
   });
+  const [visible, setVisible] = useState(false);
+  const [message, setmessage] = useState(
+    '특허번호 / 공개번호 / 결과번호를 입력하세요.',
+  );
   
-    const[message,setmessage]=useState("특허번호 / 공개번호 / 결과번호를 입력하세요.");
-    const onClickEnter=()=>setmessage ("특허번호 / 공개번호 /결과번호를 입력하세요.")
-    const onClickLeave=()=>setmessage ("여기에 기술을 설명하는 텍스트를 입력하세요.")
+  const onClickEnter = () =>
+    setmessage('특허번호 / 공개번호 /결과번호를 입력하세요.');
+  const onClickLeave = () =>
+    setmessage('여기에 기술을 설명하는 텍스트를 입력하세요.');
 
   return (
     <div className="container">
-<div className="app-title">Tanalysis</div>
-        <span className="app-number"  >
-          <a href="#" type="btn" onClick={onClickEnter}>
-            번호검색
-          </a>
-        </span>
-        <span className="app-text02" >
-          <a href="#" type="btn" onClick={onClickLeave}>
-            텍스트 검색
-          </a>
-          
-          </span>
-          
+      <div className="app-title">Tanalysis</div>
+      <span className="app-number">
+        <a href="#" type="btn" onClick={onClickEnter}>
+          번호검색
+        </a>
+      </span>
+      <span className="app-text02">
+        <a href="#" type="btn" onClick={onClickLeave}>
+          텍스트 검색
+        </a>
+      </span>
+      <a
+        onClick={() => {
+          setVisible(!visible);
+        }}
+        className="category"
+      >
+        카테고리 별 텍스트 입력
+      </a>
+
+      {visible && <Category />}
+      
       <input
         className="app-b"
+        id="firstSearch"
         placeholder={message}
         value={keyword}
         onChange={(e) => updateField('keyword', e.target.value)}
@@ -58,7 +70,6 @@ const SearchBar = ({ results, keyword, updateField,}) => {
     </div>
   );
 };
-
 
 //stateless component to render preview results
 const SearchPreview = ({ name, title, index, updateText }) => {
@@ -76,5 +87,3 @@ const SearchPreview = ({ name, title, index, updateText }) => {
 };
 
 export default SearchBar;
-
-

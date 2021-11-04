@@ -1,4 +1,4 @@
-import React, { Component,useState } from 'react';
+import React, { Component, useState } from 'react';
 
 import LoginButton from './components/Button/LoginButton';
 import PatentButton from './components/Button/PatentButton';
@@ -9,7 +9,6 @@ import SearchBar from './components/Searchlist/SearchBar';
 import TextSearch from './components/Searchlist/TextSearch';
 class App extends React.Component {
   state = {
-    
     data: [
       {
         name: 'US8046721B2',
@@ -50,23 +49,10 @@ class App extends React.Component {
 
     return (
       <>
-       <div className="container">
-     <div className="app-title">Tanalysis</div>
-        <span className="app-number" >
-          <a href="#" type="btn">
-            번호검색
-          </a>
-        </span>
-        <span className="app-text02" >
-          <a href="#" type="btn">
-            텍스트 검색
-          </a>
-          
-          </span>
-          
-          </div>
+        <div className="container">
+          <div className="app-title">Tanalysis</div>
+        </div>
         <SearchBar
-          
           results={results}
           keyword={keyword}
           updateField={this.updateField}

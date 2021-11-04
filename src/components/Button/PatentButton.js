@@ -6,6 +6,7 @@ const PatentButton = () => {
     <div className="text">
       <button className={styles.Patent}>특허 검색</button>
     </div>
+  
   );
 };
 
