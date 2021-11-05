@@ -16,7 +16,7 @@
 
     /* 비활성화색 */
     text-indent: 2em;
-    color: balck;
+    color: black;
   }
   .name {
     position: absolute;
@@ -96,6 +96,134 @@
     left: 582px;
     top: 469px;
   }
- .Text {
- }
+  .input1 {
+    position: absolute;
+    width: 621px;
+    height: 60px;
+    left: 580px;
+    top: 388px;
+    border: 1px solid #000000;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical
+   to box height */
+
+    /* 비활성화색 */
+    text-indent: 2em;
+    color: black;
+  }
+  div.engin {
+    position: absolute;
+    left: 495px;
+    top: 415px;
+    font-size: 14px;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    /* 글자색 */
+
+    color: #000000;
+  }
+  .input2 {
+    border: 1px solid #000000;
+    position: absolute;
+    width: 621px;
+    height: 60px;
+    left: 580px;
+    top: 451px;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical
+   to box height */
+
+    /* 비활성화색 */
+    text-indent: 2em;
+    color: black;
+  }
+  .allText {
+    justify-content: center;
+    width: 145px;
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    letter-spacing: 0;
+    font-weight: bold;
+    width: 145px;
+    left: 582px;
+    top: 725px;
+  }
+
+  .ordinance {
+    position: absolute;
+    left: 509px;
+    top: 605px;
+    font-size: 14px;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    /* 글자색 */
+
+    color: #000000;
+  }
+  .input3 {
+    border: 1px solid #000000;
+    position: absolute;
+    width: 621px;
+    height: 60px;
+    left: 580px;
+    top: 580px;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical
+   to box height */
+     /* 비활성화색 */
+     text-indent: 2em;
+     color: black;
+  }
+  .input4 {
+    border: 1px solid #000000;
+    position: absolute;
+    width: 621px;
+    height: 60px;
+    left: 580px;
+    top: 643px;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical
+   to box height */
+     /* 비활성화색 */
+     text-indent: 2em;
+     color: black;
+  }
 }

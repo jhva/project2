@@ -23,11 +23,12 @@ const SearchBar = ({ results, keyword, updateField }) => {
       />
     );
   });
+  
   const [visible, setVisible] = useState(false);
   const [message, setmessage] = useState(
     '특허번호 / 공개번호 / 결과번호를 입력하세요.',
   );
-  
+
   const onClickEnter = () =>
     setmessage('특허번호 / 공개번호 /결과번호를 입력하세요.');
   const onClickLeave = () =>
@@ -35,7 +36,6 @@ const SearchBar = ({ results, keyword, updateField }) => {
 
   return (
     <div className="container">
-      <div className="app-title">Tanalysis</div>
       <span className="app-number">
         <a href="#" type="btn" onClick={onClickEnter}>
           번호검색
@@ -47,15 +47,34 @@ const SearchBar = ({ results, keyword, updateField }) => {
         </a>
       </span>
       <a
+        
         onClick={() => {
           setVisible(!visible);
         }}
         className="category"
       >
-        카테고리 별 텍스트 입력
+        {visible ? null : '카테고리 별 텍스트 입력'}
       </a>
 
-      {visible && <Category />}
+      {/* visible = true 일떄는 category 보여줌. visible = false 일때는 input, div 보여줌    */}
+
+      {visible ? (
+        <Category />
+      ) : (
+        <>
+          <input
+            className="app-b"
+            id="firstSearch"
+            placeholder={message}
+            value={keyword}
+            onChange={(e) => updateField('keyword', e.target.value)}
+          />
+
+          <div className="search-results">{renderResults}</div>
+        </>
+      )}
+
+      {/*{visible && <Category />}
       
       <input
         className="app-b"
@@ -67,6 +86,7 @@ const SearchBar = ({ results, keyword, updateField }) => {
       {results.length > 0 ? (
         <div className="search-results">{renderResults}</div>
       ) : null}
+      */}
     </div>
   );
 };
